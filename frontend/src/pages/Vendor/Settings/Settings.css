@@ -1,0 +1,24 @@
+.settings-page{
+    padding:24px;
+    max-width:1200px;
+    margin:0 auto;
+    width:100%;
+}
+
+.page-header{
+    margin-bottom:25px;
+}
+
+.page-header h2{
+    font-size:28px;
+    font-weight:800;
+    color:#0f172a;
+    letter-spacing:-0.02em;
+    margin:0 0 4px 0;
+}
+
+.page-header p{
+    color:#64748b;
+    font-size:14px;
+    margin:0;
+}

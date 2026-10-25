@@ -1,0 +1,52 @@
+.notification-filter {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.notification-filter button {
+    border: none;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.25s ease;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.notification-filter button:hover {
+    background: #2563EB;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.25);
+}
+
+.notification-filter .active {
+    background: #2563EB;
+    color: white;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+/* Unread count badge */
+.notif-badge {
+    background: #EF4444;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 1px 7px;
+    border-radius: 20px;
+    min-width: 20px;
+    text-align: center;
+    display: inline-block;
+    animation: pulseBadge 1.5s ease-in-out infinite;
+}
+
+@keyframes pulseBadge {
+    0%, 100% { transform: scale(1); }
+    50%       { transform: scale(1.15); }
+}

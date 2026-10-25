@@ -1,0 +1,167 @@
+.pharmacy-info-card {
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.pharmacy-info-card h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 18px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 16px 0;
+    color: #475569;
+    font-size: 15px;
+}
+
+.pharmacy-icon {
+    flex-shrink: 0;
+    color: #2563eb;
+}
+
+.shop-name-text {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 16px;
+}
+
+.pharmacy-location-text {
+    color: #334155;
+    line-height: 1.45;
+}
+
+.distance-row {
+    margin-top: 14px;
+}
+
+.pharmacy-icon.distance-active {
+    color: #16a34a;
+}
+
+.pharmacy-icon.distance-pulsing {
+    color: #2563eb;
+    animation: iconPulse 1.5s ease-in-out infinite;
+}
+
+.distance-badge-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #1e293b;
+}
+
+.distance-value {
+    color: #15803d;
+    background: #dcfce7;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.distance-loading-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+.distance-loading-text .spinner-inline {
+    animation: spin 1s linear infinite;
+    color: #2563eb;
+}
+
+.distance-error-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #d97706;
+    font-size: 14px;
+}
+
+.retry-gps-btn {
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #fef3c7;
+    color: #b45309;
+    border: 1px solid #fde68a;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.retry-gps-btn:hover {
+    background: #fde68a;
+}
+
+.distance-na-text {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.btn-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.btn-group button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn-group button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.direction {
+    background: #16a34a !important;
+}
+
+.direction:hover {
+    background: #15803d !important;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes iconPulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(0.92);
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-group {
+        flex-direction: column;
+    }
+}

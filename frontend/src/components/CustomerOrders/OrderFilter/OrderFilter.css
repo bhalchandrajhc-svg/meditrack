@@ -1,0 +1,45 @@
+.order-filter{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.order-filter button{
+
+    padding:12px 22px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:white;
+
+    cursor:pointer;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.order-filter button:hover{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+.order-filter .active{
+
+    background:#2563EB;
+
+    color:white;
+
+}

@@ -1,0 +1,96 @@
+.vendor-medicines-page{
+
+    padding:30px;
+
+}
+
+.vendor-medicines-page h2{
+
+    margin-bottom:25px;
+
+}
+
+.medicine-grid{
+
+    display:grid;
+
+
+@media (max-width: 992px) {
+    .medicine-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .medicine-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+    gap:25px;
+
+}
+
+.medicine-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.medicine-card img{
+
+    width:100%;
+
+    height:200px;
+
+    object-fit:cover;
+
+}
+
+.medicine-card h3{
+
+    margin:15px;
+
+}
+
+.medicine-card p{
+
+    margin:5px 15px;
+
+    color:#666;
+
+}
+
+.medicine-card h4{
+
+    margin:15px;
+
+    color:#2e7d32;
+
+}
+
+.medicine-card button{
+
+    width:calc(100% - 30px);
+
+    margin:15px;
+
+    padding:12px;
+
+    border:none;
+
+    background:#2e7d32;
+
+    color:#fff;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}

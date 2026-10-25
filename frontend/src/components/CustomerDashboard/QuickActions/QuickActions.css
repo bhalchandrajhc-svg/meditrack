@@ -1,0 +1,116 @@
+.quick-actions-section {
+    margin-bottom: 32px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.section-header h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 4px 0;
+    letter-spacing: -0.02em;
+}
+
+.section-header p {
+    font-size: 13px;
+    color: #64748b;
+    margin: 0;
+}
+
+.quick-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.action-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 18px 20px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.action-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+    border-color: #cbd5e1;
+}
+
+.action-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.action-card:hover .action-icon {
+    transform: scale(1.08);
+}
+
+.action-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.action-info h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 3px 0;
+}
+
+.action-info p {
+    font-size: 12px;
+    color: #64748b;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.action-arrow {
+    color: #94a3b8;
+    transition: all 0.2s ease;
+}
+
+.action-card:hover .action-arrow {
+    color: #2563eb;
+    transform: translateX(3px);
+}
+
+/* Theme Colors */
+.theme-blue .action-icon { background: #eff6ff; color: #2563eb; }
+.theme-emerald .action-icon { background: #ecfdf5; color: #059669; }
+.theme-purple .action-icon { background: #f3e8ff; color: #7c3aed; }
+.theme-amber .action-icon { background: #fffbeb; color: #d97706; }
+.theme-indigo .action-icon { background: #e0e7ff; color: #4f46e5; }
+.theme-rose .action-icon { background: #ffe4e6; color: #e11d48; }
+
+@media (max-width: 1024px) {
+    .quick-actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .quick-actions-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+}

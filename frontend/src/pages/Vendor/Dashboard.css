@@ -1,0 +1,157 @@
+.app-layout{
+    display:flex;
+}
+
+.main-content{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    min-height:100vh;
+    background:#F8FAFC;
+}
+
+.page-content{
+    padding:30px;
+}
+
+/* ================= Dashboard Cards ================= */
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:30px;
+}
+
+/* ================= Dashboard Layout ================= */
+
+.dashboard-content{
+    display:flex;
+    gap:25px;
+    align-items:flex-start;
+}
+
+.dashboard-left{
+    flex:2;
+}
+
+.dashboard-right{
+    width:360px;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+/* ================= Recent Orders ================= */
+
+.recent-orders-card{
+    background:#fff;
+    border-radius:20px;
+    padding:22px;
+    border:1px solid #f1f5f9;
+    box-shadow:0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.recent-orders-card h3{
+    margin-bottom:20px;
+    font-size:20px;
+    font-weight:800;
+    color:#0f172a;
+    letter-spacing:-0.02em;
+}
+
+.recent-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.recent-table thead{
+    background:#f8fafc;
+}
+
+.recent-table th{
+    text-align:left;
+    padding:15px;
+    font-size:13px;
+    font-weight:600;
+    color:#64748b;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+}
+
+.recent-table td{
+    padding:15px;
+    border-bottom:1px solid #f1f5f9;
+    font-size:14px;
+    color:#475569;
+}
+
+.recent-table tbody tr:hover{
+    background:#f8fafc;
+}
+
+.empty-row{
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+}
+
+/* ================= Status ================= */
+
+.status-pill {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-pending {
+    background: #FEF3C7;
+    color: #B45309;
+}
+
+.status-accepted {
+    background: #DCFCE7;
+    color: #15803D;
+}
+
+.status-rejected {
+    background: #FEE2E2;
+    color: #DC2626;
+}
+
+.status-ready, .status-ready-for-pickup {
+    background: #DBEAFE;
+    color: #2563EB;
+}
+
+.status-completed {
+    background: #D1FAE5;
+    color: #047857;
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:1200px){
+
+    .dashboard-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .dashboard-content{
+        flex-direction:column;
+    }
+
+    .dashboard-right{
+        width:100%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .dashboard-grid{
+        grid-template-columns:1fr;
+    }
+
+}

@@ -1,0 +1,66 @@
+.profile-actions-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-actions-wrapper button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.edit-btn,
+.save-btn {
+    background: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.edit-btn:hover,
+.save-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+.cancel-btn {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.cancel-btn:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.password-btn {
+    background: #059669;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.2);
+}
+
+.password-btn:hover {
+    background: #047857;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(5, 150, 105, 0.3);
+}
+
+@media (max-width: 576px) {
+    .profile-actions-wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .profile-actions-wrapper button {
+        width: 100%;
+    }
+}

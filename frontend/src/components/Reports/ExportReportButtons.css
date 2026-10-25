@@ -1,0 +1,45 @@
+.report-export{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+    margin-top:25px;
+}
+
+.report-export button{
+    padding:12px 18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    color:#fff;
+    font-weight:600;
+    font-size:14px;
+    transition:all 0.3s ease;
+}
+
+.csv-btn{
+    background:#10b981;
+}
+
+.csv-btn:hover{
+    background:#059669;
+    transform:translateY(-1px);
+}
+
+.pdf-btn{
+    background:#ef4444;
+}
+
+.pdf-btn:hover{
+    background:#dc2626;
+    transform:translateY(-1px);
+}
+
+.print-btn{
+    background:#2563eb;
+    box-shadow:0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.print-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-1px);
+}

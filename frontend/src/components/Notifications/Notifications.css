@@ -1,0 +1,28 @@
+.notifications{
+    background:#fff;
+    padding:22px;
+    border-radius:18px;
+    border:1px solid #f1f5f9;
+    box-shadow:0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.notifications h3{
+    margin:0 0 20px 0;
+    font-size:20px;
+    font-weight:800;
+    color:#0f172a;
+}
+
+.notification-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 0;
+    border-bottom:1px solid #f1f5f9;
+    font-size:14px;
+    color:#475569;
+}
+
+.notification-item:last-child{
+    border:none;
+}

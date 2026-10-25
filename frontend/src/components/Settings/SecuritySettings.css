@@ -1,0 +1,45 @@
+.security-card{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    border:1px solid #f1f5f9;
+    box-shadow:0 4px 20px rgba(15, 23, 42, 0.04);
+    margin-bottom:25px;
+}
+
+.security-card h3{
+    margin-bottom:20px;
+    font-size:20px;
+    font-weight:800;
+    color:#0f172a;
+    letter-spacing:-0.02em;
+}
+
+.security-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+.security-grid input{
+    padding:12px;
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+    outline:none;
+    font-size:14px;
+    color:#1e293b;
+    transition:all 0.2s ease;
+}
+
+.security-grid input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.security-grid label{
+    font-size:14px;
+    font-weight:600;
+    color:#374151;
+    margin-bottom:6px;
+    display:block;
+}

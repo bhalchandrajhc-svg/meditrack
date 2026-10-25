@@ -1,0 +1,53 @@
+.reserve-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    height:max-content;
+
+}
+
+.reserve-card label{
+
+    display:block;
+
+    margin:20px 0 10px;
+
+}
+
+.reserve-card input{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+}
+
+.reserve-card button{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:15px;
+
+    border:none;
+
+    background:#2563EB;
+
+    color:white;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+}

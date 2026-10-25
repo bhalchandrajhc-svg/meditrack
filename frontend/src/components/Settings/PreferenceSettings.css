@@ -1,0 +1,49 @@
+.preference-card{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    border:1px solid #f1f5f9;
+    box-shadow:0 4px 20px rgba(15, 23, 42, 0.04);
+    margin-bottom:25px;
+}
+
+.preference-card h3{
+    margin-bottom:20px;
+    font-size:20px;
+    font-weight:800;
+    color:#0f172a;
+    letter-spacing:-0.02em;
+}
+
+.preference-grid{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.preference-grid select{
+    padding:12px 16px;
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+    width:260px;
+    outline:none;
+    font-size:14px;
+    color:#1e293b;
+    cursor:pointer;
+    transition:all 0.2s ease;
+    background:#fff;
+}
+
+.preference-grid select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.preference-grid label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:500;
+    font-size:14px;
+    color:#374151;
+}

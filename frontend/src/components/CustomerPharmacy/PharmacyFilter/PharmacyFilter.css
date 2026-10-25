@@ -1,0 +1,35 @@
+.pharmacy-filter{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.pharmacy-filter button{
+
+    border:none;
+
+    background:#fff;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.pharmacy-filter button:hover{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}

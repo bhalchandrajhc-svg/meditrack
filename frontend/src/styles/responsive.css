@@ -1,0 +1,128 @@
+/* Medi Track - global responsive safety net */
+html {
+    overflow-x: hidden;
+}
+
+body,
+#root {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+img,
+svg,
+canvas {
+    max-width: 100%;
+}
+
+/* Common grids */
+@media (max-width: 1200px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-grid,
+    .dashboard-content,
+    .vendor-info-layout,
+    .vendor-details-grid {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr !important;
+        gap: 14px;
+    }
+
+    .dashboard-content {
+        flex-direction: column;
+    }
+
+    .dashboard-right {
+        width: 100% !important;
+    }
+
+    .recent-orders-card {
+        padding: 14px;
+        border-radius: 13px;
+        overflow: hidden;
+    }
+
+    .recent-orders-card h3 {
+        font-size: 19px;
+    }
+
+    .recent-table {
+        min-width: 650px;
+    }
+
+    .admin-table-wrap,
+    .table-responsive,
+    .inventory-table-wrap {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .page-title,
+    .admin-page-heading,
+    .admin-section-title {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .form-row,
+    .form-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .modal-content,
+    .modal-box,
+    .modal-container {
+        width: calc(100vw - 28px) !important;
+        max-width: calc(100vw - 28px) !important;
+        max-height: calc(100vh - 28px);
+        overflow-y: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .recent-orders-card {
+        padding: 12px;
+    }
+
+    .admin-page-heading {
+        align-items: stretch;
+    }
+
+    .admin-page-heading > *,
+    .admin-logout {
+        width: 100%;
+    }
+
+    .admin-logout {
+        justify-content: center;
+    }
+
+    .admin-section-title {
+        align-items: flex-start;
+    }
+
+    .admin-actions {
+        flex-wrap: wrap;
+    }
+
+    .admin-actions button {
+        flex: 1 1 90px;
+    }
+}

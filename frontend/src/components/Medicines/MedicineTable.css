@@ -1,0 +1,84 @@
+.medicine-table {
+    background: #fff;
+    border-radius: 18px;
+    padding: 20px;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.04);
+    overflow-x: auto;
+}
+
+.medicine-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.medicine-table th {
+    background: #f8fafc;
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.medicine-table td {
+    padding: 16px;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 14px;
+    color: #475569;
+}
+
+.medicine-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.medicine-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.action-btns {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.action-btns svg{
+    transition:transform 0.3s ease;
+}
+
+.action-btns svg:hover{
+    transform:scale(1.2);
+}
+
+.badge {
+    padding: 7px 14px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.in-stock {
+    background: #10B981;
+}
+
+.low-stock {
+    background: #F59E0B;
+}
+
+.out-stock {
+    background: #EF4444;
+}
+
+.medicine-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}

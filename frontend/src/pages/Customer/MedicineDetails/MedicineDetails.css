@@ -1,0 +1,47 @@
+.medicine-details-page{
+
+    padding:30px;
+
+}
+
+.details-header{
+
+    margin-bottom:25px;
+
+}
+
+.back-btn{
+
+    border:none;
+
+    background:#2563EB;
+
+    color:#fff;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+}
+
+.details-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.3fr 380px;
+
+    gap:25px;
+
+}
+
+@media(max-width:1200px){
+
+.details-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}

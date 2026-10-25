@@ -1,0 +1,29 @@
+.inventory-filter{
+    display:flex;
+    gap:15px;
+    margin-bottom:25px;
+    flex-wrap:wrap;
+}
+
+.inventory-filter input,
+.inventory-filter select{
+    padding:12px 16px;
+    border:1px solid #e2e8f0;
+    border-radius:10px;
+    outline:none;
+    background:#fff;
+    color:#1e293b;
+    font-size:14px;
+    transition:all 0.2s ease;
+}
+
+.inventory-filter input:focus,
+.inventory-filter select:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.inventory-filter input{
+    flex:1;
+    min-width:280px;
+}

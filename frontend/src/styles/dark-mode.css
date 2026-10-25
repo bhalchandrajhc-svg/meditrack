@@ -1,0 +1,1234 @@
+/* =========================================================
+   Dark Mode Theme
+   Applied when <html data-theme="dark">
+   Overrides hardcoded light palettes across the app.
+   ========================================================= */
+
+/* ---------- Base ---------- */
+[data-theme="dark"] body {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .customer-layout {
+    background: #0f172a;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: #334155;
+}
+
+[data-theme="dark"] select option {
+    background: #1e293b;
+    color: #e2e8f0;
+}
+
+/* ---------- Sidebar ---------- */
+[data-theme="dark"] .customer-sidebar {
+    background: #1e293b;
+    border-right-color: #334155;
+}
+
+[data-theme="dark"] .sidebar-logo {
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .sidebar-logo h2 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .sidebar-close-btn {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .sidebar-close-btn:hover {
+    background: #334155;
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .sidebar-link {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .sidebar-link:hover {
+    background: #334155;
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .sidebar-link.active {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+/* ---------- Navbar ---------- */
+[data-theme="dark"] .customer-navbar {
+    background: #1e293b;
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .customer-navbar .navbar-left h2 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .icon-btn,
+[data-theme="dark"] .profile-btn {
+    background: #334155;
+    color: #93c5fd;
+}
+
+[data-theme="dark"] .icon-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .profile-btn:hover {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .menu-btn {
+    color: #e2e8f0;
+}
+
+/* ---------- Navbar Dropdowns ---------- */
+[data-theme="dark"] .customer-language-menu,
+[data-theme="dark"] .customer-notification-menu,
+[data-theme="dark"] .customer-profile-menu {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .customer-language-menu button:hover {
+    background: #334155;
+    color: #93c5fd;
+}
+
+[data-theme="dark"] .customer-notification-header {
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .customer-notification-header h4 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .customer-notification-header span {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .notification-read-btn {
+    background: #334155;
+    color: #93c5fd;
+}
+
+[data-theme="dark"] .customer-notification-item {
+    background: #1e293b;
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .customer-notification-item.unread {
+    background: #172554;
+}
+
+[data-theme="dark"] .notification-content strong {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .notification-content p {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .notification-content small {
+    color: #64748b;
+}
+
+[data-theme="dark"] .customer-no-notification {
+    color: #64748b;
+}
+
+[data-theme="dark"] .customer-notification-footer {
+    border-top-color: #334155;
+}
+
+[data-theme="dark"] .customer-notification-footer button {
+    background: #334155;
+    color: #93c5fd;
+}
+
+[data-theme="dark"] .customer-notification-footer .clear-notification-btn {
+    background: #450a0a;
+    color: #f87171;
+}
+
+[data-theme="dark"] .customer-profile-avatar {
+    background: #334155;
+    color: #93c5fd;
+}
+
+[data-theme="dark"] .customer-profile-details strong {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .customer-profile-details span {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .customer-profile-divider {
+    background: #334155;
+}
+
+[data-theme="dark"] .customer-profile-menu-item {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .customer-profile-menu-item:hover {
+    background: #334155;
+    color: #93c5fd;
+}
+
+[data-theme="dark"] .customer-logout-btn,
+[data-theme="dark"] .customer-logout-btn:hover {
+    color: #f87171;
+}
+
+[data-theme="dark"] .customer-logout-btn:hover {
+    background: #450a0a;
+}
+
+/* ---------- Dashboard Cards / Quick Actions ---------- */
+[data-theme="dark"] .dashboard-card,
+[data-theme="dark"] .action-card,
+[data-theme="dark"] .article-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .dashboard-card:hover,
+[data-theme="dark"] .action-card:hover,
+[data-theme="dark"] .article-card:hover {
+    border-color: #475569;
+}
+
+[data-theme="dark"] .section-header h2,
+[data-theme="dark"] .card-body-row h2,
+[data-theme="dark"] .card-body-row h3,
+[data-theme="dark"] .action-info h3 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .section-header p,
+[data-theme="dark"] .card-body-row p,
+[data-theme="dark"] .card-action-hint,
+[data-theme="dark"] .action-info p {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .dashboard-card:hover .card-action-hint {
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .action-arrow {
+    color: #64748b;
+}
+
+[data-theme="dark"] .action-card:hover .action-arrow {
+    color: #60a5fa;
+}
+
+/* Card icon themes */
+[data-theme="dark"] .card-theme-blue .card-icon-wrap {
+    background: #172554;
+    color: #60a5fa;
+}
+[data-theme="dark"] .card-theme-indigo .card-icon-wrap {
+    background: #1e1b4b;
+    color: #818cf8;
+}
+[data-theme="dark"] .card-theme-amber .card-icon-wrap {
+    background: #451a03;
+    color: #fbbf24;
+}
+[data-theme="dark"] .card-theme-emerald .card-icon-wrap {
+    background: #052e16;
+    color: #34d399;
+}
+[data-theme="dark"] .card-theme-blue:hover {
+    border-color: #1e40af;
+}
+[data-theme="dark"] .card-theme-indigo:hover {
+    border-color: #4338ca;
+}
+[data-theme="dark"] .card-theme-amber:hover {
+    border-color: #b45309;
+}
+[data-theme="dark"] .card-theme-emerald:hover {
+    border-color: #047857;
+}
+
+/* Quick action icon themes */
+[data-theme="dark"] .theme-blue .action-icon {
+    background: #172554;
+    color: #60a5fa;
+}
+[data-theme="dark"] .theme-emerald .action-icon {
+    background: #052e16;
+    color: #34d399;
+}
+[data-theme="dark"] .theme-purple .action-icon {
+    background: #2e1065;
+    color: #a78bfa;
+}
+[data-theme="dark"] .theme-amber .action-icon {
+    background: #451a03;
+    color: #fbbf24;
+}
+[data-theme="dark"] .theme-indigo .action-icon {
+    background: #1e1b4b;
+    color: #818cf8;
+}
+[data-theme="dark"] .theme-rose .action-icon {
+    background: #4c0519;
+    color: #fb7185;
+}
+
+/* ---------- Health Tips ---------- */
+[data-theme="dark"] .health-tips-badge {
+    background: #172554;
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .health-tips-header h2 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .filter-pill {
+    background: #334155;
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .filter-pill:hover {
+    background: #475569;
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .filter-pill.active {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .article-card h3 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .article-card p,
+[data-theme="dark"] .read-time,
+[data-theme="dark"] .author-info {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .article-footer {
+    border-top-color: #334155;
+}
+
+[data-theme="dark"] .badge-rose {
+    background: #4c0519;
+    color: #fb7185;
+}
+[data-theme="dark"] .badge-blue {
+    background: #172554;
+    color: #60a5fa;
+}
+[data-theme="dark"] .badge-emerald {
+    background: #052e16;
+    color: #34d399;
+}
+[data-theme="dark"] .badge-purple {
+    background: #2e1065;
+    color: #a78bfa;
+}
+
+[data-theme="dark"] .read-more-btn {
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .read-more-btn:hover {
+    background: #172554;
+}
+
+[data-theme="dark"] .article-modal-content {
+    background: #1e293b;
+}
+
+[data-theme="dark"] .modal-header {
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .modal-close-btn {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .modal-close-btn:hover {
+    background: #334155;
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .modal-body h2 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .modal-meta {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .modal-intro {
+    color: #cbd5e1;
+    border-left-color: #3b82f6;
+}
+
+[data-theme="dark"] .modal-section-block h4 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .modal-section-block li {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .dos-box {
+    background: #052e16;
+    border-color: #166534;
+}
+
+[data-theme="dark"] .dos-box h5 {
+    color: #34d399;
+}
+
+[data-theme="dark"] .dos-box li {
+    color: #6ee7b7;
+}
+
+[data-theme="dark"] .donts-box {
+    background: #4c0519;
+    border-color: #9f1239;
+}
+
+[data-theme="dark"] .donts-box h5 {
+    color: #fb7185;
+}
+
+[data-theme="dark"] .donts-box li {
+    color: #fda4af;
+}
+
+[data-theme="dark"] .modal-footer {
+    border-top-color: #334155;
+}
+
+/* ---------- Find Medicines ---------- */
+[data-theme="dark"] .search-section-wrapper {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .status-info {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .results-count strong {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .clear-all-filters-link:hover {
+    background: #450a0a;
+}
+
+[data-theme="dark"] .medicines-loading-state {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .medicine-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .medicine-card:hover {
+    border-color: #1e40af;
+}
+
+[data-theme="dark"] .medicine-image-wrapper {
+    background: #0f172a;
+}
+
+[data-theme="dark"] .medicine-category-badge {
+    background: rgba(30, 41, 59, 0.92);
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .stock-status-badge.in-stock {
+    background: rgba(5, 46, 22, 0.92);
+    color: #4ade80;
+    border-color: #166534;
+}
+
+[data-theme="dark"] .stock-status-badge.out-of-stock {
+    background: rgba(69, 10, 10, 0.92);
+    color: #f87171;
+    border-color: #7f1d1d;
+}
+
+[data-theme="dark"] .medicine-title {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .medicine-company,
+[data-theme="dark"] .medicine-card p {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .pharmacy-info {
+    background: #0f172a;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .pharmacy-name {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .medicine-footer {
+    border-top-color: #334155;
+}
+
+[data-theme="dark"] .price-tag {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .price-tag .currency {
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .view-btn {
+    background: #334155;
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .view-btn:hover {
+    background: #475569;
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .reserve-btn:disabled {
+    background: #334155;
+    color: #64748b;
+}
+
+/* ---------- Search Bar ---------- */
+[data-theme="dark"] .search-box,
+[data-theme="dark"] .pharmacy-search-main .search-box {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .search-box input,
+[data-theme="dark"] .pharmacy-search-main .search-box input {
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .search-box input::placeholder,
+[data-theme="dark"] .pharmacy-search-main .search-box input::placeholder {
+    color: #64748b;
+}
+
+[data-theme="dark"] .clear-btn {
+    background: #334155;
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .clear-btn:hover {
+    background: #475569;
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .filter-toggle-btn,
+[data-theme="dark"] .sort-dropdown-wrapper,
+[data-theme="dark"] .radius-selector-pill {
+    background: #1e293b;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .filter-toggle-btn:hover {
+    background: #334155;
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .filter-toggle-btn.active {
+    background: #172554;
+    border-color: #1e40af;
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .sort-select,
+[data-theme="dark"] .radius-selector-pill label {
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .radius-select {
+    color: #60a5fa;
+}
+
+/* ---------- Category Filter ---------- */
+[data-theme="dark"] .category-pill {
+    background: #1e293b;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .category-pill .category-icon {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .category-pill:hover {
+    background: #334155;
+    border-color: #1e40af;
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .category-pill.active {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    border-color: #2563eb;
+    color: #ffffff;
+}
+
+/* ---------- Medicines Empty State ---------- */
+[data-theme="dark"] .medicines-empty-state {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .empty-icon-wrapper {
+    background: #172554;
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .medicines-empty-state h3 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .medicines-empty-state p {
+    color: #94a3b8;
+}
+
+/* ---------- Medicine Details ---------- */
+[data-theme="dark"] .medicine-image-card,
+[data-theme="dark"] .medicine-info-card,
+[data-theme="dark"] .pharmacy-info-card,
+[data-theme="dark"] .reserve-card {
+    background: #1e293b;
+}
+
+[data-theme="dark"] .medicine-info-card .company,
+[data-theme="dark"] .description p {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .badge {
+    background: #172554;
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .stock {
+    background: #052e16;
+    color: #34d399;
+}
+
+[data-theme="dark"] .price {
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .info-row {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .reserve-card label {
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .reserve-card input {
+    background: #0f172a;
+    border-color: #334155;
+    color: #e2e8f0;
+}
+
+/* ---------- Pharmacy Medicines ---------- */
+[data-theme="dark"] .vendor-medicines-page h2 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .medicine-card h3 {
+    color: #f1f5f9;
+}
+
+/* ---------- Nearby Pharmacies ---------- */
+[data-theme="dark"] .location-error-card {
+    background: #450a0a;
+    border-color: #7f1d1d;
+    color: #fca5a5;
+}
+
+[data-theme="dark"] .error-text p {
+    color: #f87171;
+}
+
+[data-theme="dark"] .location-detected-bar {
+    background: #052e16;
+    border-color: #166534;
+    color: #4ade80;
+}
+
+[data-theme="dark"] .sparkle-icon {
+    color: #34d399;
+}
+
+[data-theme="dark"] .pharmacy-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .pharmacy-card:hover {
+    border-color: #047857;
+}
+
+[data-theme="dark"] .pharmacy-card-image-wrapper {
+    background: #0f172a;
+}
+
+[data-theme="dark"] .pharmacy-title {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .detail-item {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .pharmacy-loading-state,
+[data-theme="dark"] .pharmacies-empty-state {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+/* ---------- My Orders ---------- */
+[data-theme="dark"] .orders-controls-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .orders-search-box {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .orders-search-box input {
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .tab-btn {
+    background: #1e293b;
+    border-color: #334155;
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .tab-btn:hover {
+    background: #2e1065;
+    border-color: #6d28d9;
+    color: #a78bfa;
+}
+
+[data-theme="dark"] .tab-btn.active {
+    background: #7c3aed;
+    border-color: #7c3aed;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .order-card-item {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .order-card-item:hover {
+    border-color: #6d28d9;
+}
+
+[data-theme="dark"] .order-card-image-box {
+    background: #0f172a;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .medicine-name {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .order-status-badge.pending {
+    background: #451a03;
+    color: #fbbf24;
+    border-color: #92400e;
+}
+
+[data-theme="dark"] .order-status-badge.accepted {
+    background: #172554;
+    color: #60a5fa;
+    border-color: #1e40af;
+}
+
+[data-theme="dark"] .order-status-badge.ready {
+    background: #052e16;
+    color: #4ade80;
+    border-color: #166534;
+}
+
+[data-theme="dark"] .order-status-badge.completed {
+    background: #052e16;
+    color: #34d399;
+    border-color: #065f46;
+}
+
+[data-theme="dark"] .order-status-badge.rejected {
+    background: #450a0a;
+    color: #f87171;
+    border-color: #7f1d1d;
+}
+
+[data-theme="dark"] .meta-item {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .meta-item strong {
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .meta-icon {
+    color: #a78bfa;
+}
+
+[data-theme="dark"] .order-footer-row {
+    border-top-color: #334155;
+}
+
+[data-theme="dark"] .price-label {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .price-value {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .view-order-btn {
+    background: #2e1065;
+    color: #a78bfa;
+}
+
+[data-theme="dark"] .view-order-btn:hover {
+    background: #7c3aed;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .orders-loading-state,
+[data-theme="dark"] .orders-empty-state {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+/* ---------- Notifications Page ---------- */
+[data-theme="dark"] .notifications-header__left h2 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .notifications-header__left p {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .notif-action-btn--read {
+    background: #172554;
+    color: #60a5fa;
+    border-color: #1e40af;
+}
+
+[data-theme="dark"] .notif-action-btn--clear {
+    background: #450a0a;
+    color: #f87171;
+    border-color: #7f1d1d;
+}
+
+[data-theme="dark"] .notif-card {
+    background: #1e293b !important;
+    border-left-color: #334155 !important;
+}
+
+[data-theme="dark"] .notif-card--unread {
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.25);
+}
+
+[data-theme="dark"] .notif-card__time {
+    color: #64748b;
+}
+
+[data-theme="dark"] .notif-card__message {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .notif-card__btn--read {
+    background: #052e16;
+    color: #34d399;
+}
+
+[data-theme="dark"] .notif-card__btn--delete {
+    background: #450a0a;
+    color: #f87171;
+}
+
+[data-theme="dark"] .notification-filter button {
+    background: #1e293b;
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .notification-filter button:hover,
+[data-theme="dark"] .notification-filter .active {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .empty-notifications {
+    background: #1e293b;
+}
+
+[data-theme="dark"] .empty-notifications h2 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .empty-notifications p {
+    color: #94a3b8;
+}
+
+/* ---------- Profile ---------- */
+[data-theme="dark"] .profile-hero-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .avatar-wrapper img {
+    border-color: #1e293b;
+    background: #1e293b;
+}
+
+[data-theme="dark"] .name-row h2 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .verified-pill {
+    background: #172554;
+    color: #60a5fa;
+    border-color: #1e40af;
+}
+
+[data-theme="dark"] .email-row {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .profile-info-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .section-title-row {
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .section-title-row h3 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .mode-badge {
+    background: #334155;
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .info-field-box label {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .info-field-box input,
+[data-theme="dark"] .info-field-box select,
+[data-theme="dark"] .info-field-box textarea {
+    background: #0f172a;
+    border-color: #334155;
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .info-field-box input:disabled,
+[data-theme="dark"] .info-field-box select:disabled,
+[data-theme="dark"] .info-field-box textarea:disabled {
+    background: #1e293b;
+    border-color: #334155;
+    color: #64748b;
+}
+
+[data-theme="dark"] .profile-loading-state {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .cancel-btn {
+    background: #334155;
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .cancel-btn:hover {
+    background: #475569;
+    color: #f1f5f9;
+}
+
+/* ---------- Settings ---------- */
+[data-theme="dark"] .settings-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .settings-card-header {
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .settings-card-header h3 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .settings-card-icon.blue {
+    background: #172554;
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .settings-card-icon.red {
+    background: #450a0a;
+    color: #f87171;
+}
+
+[data-theme="dark"] .settings-card-icon.purple {
+    background: #2e1065;
+    color: #a78bfa;
+}
+
+[data-theme="dark"] .setting-row label {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .setting-select {
+    background: #0f172a;
+    border-color: #334155;
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .setting-select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+[data-theme="dark"] .security-btn.danger {
+    background: #450a0a;
+    color: #f87171;
+    border-color: #7f1d1d;
+}
+
+[data-theme="dark"] .security-btn.danger:hover {
+    background: #dc2626;
+    color: #ffffff;
+}
+
+[data-theme="dark"] .preference-item {
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .preference-label strong {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .preference-label span {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .toggle-slider {
+    background: #475569;
+}
+
+[data-theme="dark"] .toggle-slider::before {
+    background: #f1f5f9;
+}
+
+/* ---------- Common Modals / Toggles ---------- */
+[data-theme="dark"] .delete-modal {
+    background: #1e293b;
+}
+
+[data-theme="dark"] .delete-modal h2 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .delete-modal p {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .delete-icon {
+    background: #450a0a;
+}
+
+[data-theme="dark"] .cancel-delete {
+    background: #334155;
+    color: #e2e8f0;
+}
+
+[data-theme="dark"] .cancel-delete:hover {
+    background: #475569;
+}
+
+/* =========================================================
+   Vendor / Admin Layout (white shell -> dark)
+   ========================================================= */
+
+[data-theme="dark"] .main-content {
+    background: #0f172a;
+}
+
+[data-theme="dark"] .page-content {
+    background: transparent;
+}
+
+/* ---------- Vendor Sidebar ---------- */
+[data-theme="dark"] .sidebar {
+    background: #1e293b;
+    border-right-color: #334155;
+}
+
+[data-theme="dark"] .sidebar-header {
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .sidebar-header h3 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .sidebar-header small {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .sidebar-menu a {
+    color: #94a3b8;
+}
+
+[data-theme="dark"] .sidebar-menu a:hover {
+    background: #334155;
+    color: #60a5fa;
+}
+
+[data-theme="dark"] .sidebar-menu a.active {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+/* ---------- Vendor Navbar ---------- */
+[data-theme="dark"] .navbar {
+    background: #1e293b;
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .navbar .navbar-left h2 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .navbar .search-box,
+[data-theme="dark"] .navbar-search-box {
+    background: #0f172a;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .navbar .search-box input {
+    color: #e2e8f0;
+}
+
+/* ---------- Vendor Profile Dropdown ---------- */
+[data-theme="dark"] .profile-dropdown {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .profile-dropdown .dropdown-item:hover {
+    background: #334155;
+    color: #93c5fd;
+}
+
+[data-theme="dark"] .profile-dropdown-header {
+    border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .profile-dropdown-header strong {
+    color: #f1f5f9;
+}
+
+/* ---------- Vendor Cards / Tables / Pages ---------- */
+[data-theme="dark"] .vendor-card,
+[data-theme="dark"] .card,
+[data-theme="dark"] .stat-card,
+[data-theme="dark"] .summary-card,
+[data-theme="dark"] .inventory-table,
+[data-theme="dark"] .order-table,
+[data-theme="dark"] .medicine-table,
+[data-theme="dark"] .report-table,
+[data-theme="dark"] .reports-summary,
+[data-theme="dark"] .stock-alert {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+[data-theme="dark"] .inventory-table th,
+[data-theme="dark"] .order-table th,
+[data-theme="dark"] .medicine-table th,
+[data-theme="dark"] .report-table th {
+    background: #0f172a;
+}
+
+[data-theme="dark"] .inventory-table td,
+[data-theme="dark"] .order-table td,
+[data-theme="dark"] .medicine-table td,
+[data-theme="dark"] .report-table td {
+    border-bottom-color: #334155;
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .page-header h2 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .page-header p {
+    color: #94a3b8;
+}
+
+/* ---------- Vendor Modals ---------- */
+[data-theme="dark"] .modal-overlay .modal-content,
+[data-theme="dark"] .modal-content {
+    background: #1e293b;
+}
+
+[data-theme="dark"] .modal-overlay .modal-content h3,
+[data-theme="dark"] .modal-content h3 {
+    color: #f1f5f9;
+}
+
+[data-theme="dark"] .modal-overlay .modal-content label,
+[data-theme="dark"] .modal-overlay .modal-content .form-label,
+[data-theme="dark"] .modal-content label {
+    color: #cbd5e1;
+}
+
+[data-theme="dark"] .modal-overlay .modal-content input,
+[data-theme="dark"] .modal-overlay .modal-content select,
+[data-theme="dark"] .modal-overlay .modal-content textarea,
+[data-theme="dark"] .modal-content input,
+[data-theme="dark"] .modal-content select,
+[data-theme="dark"] .modal-content textarea {
+    background: #0f172a;
+    border-color: #334155;
+    color: #e2e8f0;
+}

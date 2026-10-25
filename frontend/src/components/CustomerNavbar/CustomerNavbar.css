@@ -1,0 +1,793 @@
+.customer-navbar{
+
+    height:70px;
+
+    background:#fff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 30px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+}
+
+.navbar-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+}
+
+.menu-btn{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    display:none;
+}
+
+.navbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+.icon-btn{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.icon-btn:hover{
+
+    background:#2563EB;
+
+    color:white;
+}
+
+.profile-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    border:none;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-weight:600;
+}
+
+@media(max-width:992px){
+
+.menu-btn{
+
+display:block;
+
+}
+
+}
+
+/* =================================
+   Customer Navbar Dropdown
+================================= */
+
+.customer-navbar-dropdown {
+    position: relative;
+}
+
+
+/* =================================
+   Language Dropdown
+================================= */
+
+.customer-language-menu {
+
+    position: absolute;
+
+    top: 48px;
+    right: 0;
+
+    width: 150px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    padding: 6px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+
+    z-index: 1000;
+}
+
+
+.customer-language-menu button {
+
+    width: 100%;
+
+    border: none;
+
+    background: transparent;
+
+    padding: 10px 12px;
+
+    text-align: left;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+.customer-language-menu button:hover {
+
+    background: #f1f5f9;
+
+    color: #2563eb;
+
+}
+
+/* =========================================
+   Customer Notification Bell
+========================================= */
+
+.customer-bell-btn {
+    position: relative;
+}
+
+
+/* =========================================
+   Notification Badge
+========================================= */
+
+.customer-notification-badge {
+
+    position: absolute;
+
+    top: -6px;
+    right: -6px;
+
+    min-width: 18px;
+    height: 18px;
+
+    padding: 0 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ef4444;
+    color: #ffffff;
+
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+   Notification Dropdown
+========================================= */
+
+.customer-notification-menu {
+
+    position: absolute;
+
+    top: 48px;
+    right: 0;
+
+    width: 360px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.15);
+
+    overflow: hidden;
+
+    z-index: 2000;
+
+}
+
+
+/* =========================================
+   Header
+========================================= */
+
+.customer-notification-header {
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+}
+
+
+.customer-notification-header h4 {
+
+    margin: 0;
+
+    font-size: 16px;
+
+    color: #111827;
+
+}
+
+
+.customer-notification-header span {
+
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 12px;
+
+    color: #6b7280;
+
+}
+
+
+/* =========================================
+   Mark Read Button
+========================================= */
+
+.notification-read-btn {
+
+    width: 34px;
+    height: 34px;
+
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
+
+
+.notification-read-btn:disabled {
+
+    opacity: 0.4;
+
+    cursor: default;
+
+}
+
+
+/* =========================================
+   Notification List
+========================================= */
+
+.customer-notification-list {
+
+    max-height: 350px;
+
+    overflow-y: auto;
+
+}
+
+
+/* =========================================
+   Notification Item
+========================================= */
+
+.customer-notification-item {
+
+    display: flex;
+
+    gap: 10px;
+
+    padding: 14px 16px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    background: #ffffff;
+
+}
+
+
+.customer-notification-item.unread {
+
+    background: #eff6ff;
+
+}
+
+
+/* =========================================
+   Notification Dot
+========================================= */
+
+.notification-dot {
+
+    width: 8px;
+    height: 8px;
+
+    min-width: 8px;
+
+    margin-top: 7px;
+
+    background: #2563eb;
+
+    border-radius: 50%;
+
+}
+
+
+.customer-notification-item:not(.unread)
+.notification-dot {
+
+    background: #cbd5e1;
+
+}
+
+
+/* =========================================
+   Notification Content
+========================================= */
+
+.notification-content {
+
+    flex: 1;
+
+}
+
+
+.notification-content strong {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 14px;
+
+    color: #111827;
+
+}
+
+
+.notification-content p {
+
+    margin: 0;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    color: #4b5563;
+
+}
+
+
+.notification-content small {
+
+    display: block;
+
+    margin-top: 6px;
+
+    font-size: 11px;
+
+    color: #9ca3af;
+
+}
+
+
+/* =========================================
+   Empty Notification
+========================================= */
+
+.customer-no-notification {
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+}
+
+
+.customer-no-notification p {
+
+    margin-top: 10px;
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================
+   Footer
+========================================= */
+
+.customer-notification-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    padding: 10px;
+
+    border-top: 1px solid #e5e7eb;
+
+}
+
+
+.customer-notification-footer button {
+
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 9px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+}
+
+
+.customer-notification-footer button:disabled {
+
+    opacity: 0.4;
+
+    cursor: default;
+
+}
+
+
+.customer-notification-footer
+.clear-notification-btn {
+
+    background: #fef2f2;
+
+    color: #dc2626;
+
+}
+
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media (max-width: 600px) {
+
+    .customer-notification-menu {
+
+        width: 310px;
+
+        right: -70px;
+
+    }
+
+}
+
+/* =========================================
+   Customer Profile Dropdown
+========================================= */
+
+.customer-profile-menu {
+
+    position: absolute;
+
+    top: 52px;
+    right: 0;
+
+    width: 280px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.15);
+
+    padding: 8px;
+
+    z-index: 2500;
+
+}
+
+
+/* =========================================
+   Customer Information
+========================================= */
+
+.customer-profile-info {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px;
+
+}
+
+
+.customer-profile-avatar {
+
+    width: 42px;
+    height: 42px;
+
+    min-width: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 50%;
+
+}
+
+
+.customer-profile-details {
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.customer-profile-details strong {
+
+    font-size: 14px;
+
+    color: #111827;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+.customer-profile-details span {
+
+    margin-top: 3px;
+
+    font-size: 12px;
+
+    color: #6b7280;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* =========================================
+   Divider
+========================================= */
+
+.customer-profile-divider {
+
+    height: 1px;
+
+    margin: 6px 4px;
+
+    background: #e5e7eb;
+
+}
+
+
+/* =========================================
+   Menu Items
+========================================= */
+
+.customer-profile-menu-item {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 10px 12px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #374151;
+
+    font-size: 14px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.customer-profile-menu-item:hover {
+
+    background: #f1f5f9;
+
+    color: #2563eb;
+
+}
+
+
+/* =========================================
+   Logout
+========================================= */
+
+.customer-logout-btn {
+
+    color: #dc2626;
+
+}
+
+
+.customer-logout-btn:hover {
+
+    background: #fef2f2;
+
+    color: #dc2626;
+
+}
+
+
+/* =========================================
+   Mobile
+========================================= */
+
+@media (max-width: 600px) {
+
+    .customer-profile-menu {
+
+        width: 260px;
+
+        right: 0;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+    .customer-navbar {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+        gap: 8px;
+    }
+
+    .customer-navbar .navbar-left {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .customer-navbar .navbar-left h2 {
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .customer-navbar .navbar-right {
+        gap: 6px;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .customer-navbar .navbar-left h2 {
+        font-size: 14px;
+    }
+
+    .profile-btn span {
+        display: none;
+    }
+
+    .profile-btn {
+        width: 42px;
+        height: 42px;
+        padding: 0;
+        justify-content: center;
+        border-radius: 50%;
+    }
+}

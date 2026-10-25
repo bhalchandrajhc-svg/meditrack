@@ -1,0 +1,108 @@
+.view-order-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(15, 23, 42, 0.55);
+    backdrop-filter:blur(4px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    padding:20px;
+}
+
+.view-order-modal{
+    width:700px;
+    max-width:95%;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    animation:popup .25s ease;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+@keyframes popup{
+    from{
+        transform:scale(.95);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.view-order-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px;
+    border-bottom:1px solid #f1f5f9;
+}
+
+.view-order-header h2{
+    font-size:22px;
+    font-weight:800;
+    color:#0f172a;
+    margin:0;
+    letter-spacing:-0.02em;
+}
+
+.close-btn{
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:#f3f4f6;
+    cursor:pointer;
+    font-size:20px;
+    color:#64748b;
+    transition:all 0.2s ease;
+}
+
+.close-btn:hover{
+    background:#e2e8f0;
+    color:#0f172a;
+}
+
+.view-order-body{
+    padding:25px;
+}
+
+.detail-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:14px;
+}
+
+.detail-row strong{
+    color:#1e293b;
+}
+
+.detail-row p{
+    color:#64748b;
+    margin:0;
+}
+
+.medicine-list{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.medicine-list th{
+    background:#f8fafc;
+    color:#64748b;
+    padding:12px;
+    text-align:left;
+    font-size:13px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+}
+
+.medicine-list td{
+    padding:12px;
+    border-bottom:1px solid #f1f5f9;
+    font-size:14px;
+    color:#475569;
+}

@@ -1,0 +1,68 @@
+.inventory-analytics{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin:25px 0;
+}
+
+.analytics-card{
+    background:#fff;
+    border-radius:16px;
+    padding:22px;
+    border:1px solid #e2e8f0;
+    box-shadow:0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.analytics-card h4{
+    margin-bottom:15px;
+    font-size:16px;
+    font-weight:700;
+    color:#0f172a;
+}
+
+.value-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.value-circle{
+    width:180px;
+    height:180px;
+    border:8px solid #2563eb;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    font-weight:700;
+    color:#2563eb;
+    margin-bottom:20px;
+    box-shadow:0 4px 14px rgba(37, 99, 235, 0.15);
+}
+
+.value-card p{
+    font-size:17px;
+    font-weight:600;
+    color:#0f172a;
+    margin:0;
+}
+
+.value-card span{
+    color:#64748b;
+    margin-top:5px;
+}
+
+@media(max-width:1300px){
+    .inventory-analytics{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+    .inventory-analytics{
+        grid-template-columns:1fr;
+    }
+}

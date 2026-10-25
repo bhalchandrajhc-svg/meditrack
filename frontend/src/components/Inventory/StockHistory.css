@@ -1,0 +1,49 @@
+.stock-history{
+    background:white;
+    margin-top:20px;
+    padding:22px;
+    border-radius:18px;
+    border:1px solid #f1f5f9;
+    box-shadow:0 4px 20px rgba(15, 23, 42, 0.04);
+}
+
+.history-header h3{
+    margin:0 0 20px 0;
+    font-size:20px;
+    font-weight:800;
+    color:#0f172a;
+    letter-spacing:-0.02em;
+}
+
+.stock-history table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.stock-history th{
+    background:#f8fafc;
+    padding:12px;
+    text-align:left;
+    font-size:13px;
+    font-weight:600;
+    color:#64748b;
+    text-transform:uppercase;
+    letter-spacing:0.03em;
+}
+
+.stock-history td{
+    padding:12px;
+    border-bottom:1px solid #f1f5f9;
+    font-size:14px;
+    color:#475569;
+}
+
+.stock-history tbody tr:hover{
+    background:#f8fafc;
+}
+
+.empty-history{
+    text-align:center;
+    padding:25px;
+    color:#94a3b8;
+}

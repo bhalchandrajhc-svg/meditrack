@@ -1,0 +1,86 @@
+.view-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(15, 23, 42, 0.55);
+    backdrop-filter:blur(4px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    padding:20px;
+}
+
+.view-modal{
+    width:700px;
+    max-width:100%;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    animation:popup .25s ease;
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+}
+
+@keyframes popup{
+    from{
+        transform:scale(.95);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.view-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 25px;
+    border-bottom:1px solid #f1f5f9;
+}
+
+.view-header h2{
+    margin:0;
+    font-size:22px;
+    font-weight:800;
+    color:#0f172a;
+}
+
+.view-body{
+    padding:30px;
+}
+
+.medicine-image{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.medicine-image img{
+    width:140px;
+    height:140px;
+    border-radius:15px;
+    object-fit:cover;
+    border:1px solid #e2e8f0;
+}
+
+.medicine-details{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.detail-row{
+    display:flex;
+    flex-direction:column;
+}
+
+.detail-row span{
+    color:#6b7280;
+    font-size:14px;
+}
+
+.detail-row strong{
+    margin-top:6px;
+    font-size:16px;
+    color:#1e293b;
+}

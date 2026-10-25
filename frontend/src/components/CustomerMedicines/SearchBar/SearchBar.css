@@ -1,0 +1,182 @@
+.medicine-search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.medicine-search-main {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+}
+
+.search-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ffffff;
+    padding: 14px 20px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);
+    transition: all 0.2s ease;
+}
+
+.search-box:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12), 0 4px 20px rgba(37, 99, 235, 0.08);
+}
+
+.search-icon {
+    color: #94a3b8;
+    flex-shrink: 0;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 15px;
+    color: #1e293b;
+    background: transparent;
+    font-family: inherit;
+}
+
+.search-box input::placeholder {
+    color: #94a3b8;
+}
+
+.clear-btn {
+    background: #f1f5f9;
+    border: none;
+    color: #64748b;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0;
+    flex-shrink: 0;
+}
+
+.clear-btn:hover {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.25);
+    white-space: nowrap;
+}
+
+.search-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.35);
+}
+
+.search-filters-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.filter-toggle-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    color: #475569;
+    padding: 9px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.filter-toggle-btn:hover {
+    border-color: #cbd5e1;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+.filter-toggle-btn.active {
+    background: #eff6ff;
+    border-color: #93c5fd;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.sort-dropdown-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 8px 14px;
+    border-radius: 30px;
+    margin-left: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+}
+
+.sort-icon {
+    color: #64748b;
+    flex-shrink: 0;
+}
+
+.sort-select {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 500;
+    color: #334155;
+    cursor: pointer;
+    padding-right: 4px;
+}
+
+@media (max-width: 768px) {
+    .medicine-search-main {
+        flex-direction: row;
+    }
+
+    .search-btn span {
+        display: none;
+    }
+
+    .search-btn {
+        padding: 14px;
+        border-radius: 16px;
+    }
+
+    .sort-dropdown-wrapper {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .sort-select {
+        width: 100%;
+    }
+}

@@ -1,0 +1,85 @@
+.empty-orders{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:80px 40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    gap:18px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.empty-orders svg{
+
+    color:#2563EB;
+
+}
+
+.empty-orders h2{
+
+    font-size:30px;
+
+}
+
+.empty-orders p{
+
+    color:#666;
+
+}
+
+.empty-orders button{
+
+    margin-top:10px;
+
+    background:#2563EB;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.empty-orders button:hover{
+
+    background:#1D4ED8;
+
+}
+
+@media(max-width:768px){
+
+.empty-orders{
+
+padding:50px 20px;
+
+}
+
+.empty-orders h2{
+
+font-size:24px;
+
+}
+
+}

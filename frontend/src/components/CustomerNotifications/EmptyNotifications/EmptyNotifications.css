@@ -1,0 +1,81 @@
+.empty-notifications{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:80px 40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    gap:18px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.empty-notifications svg{
+
+    color:#2563EB;
+
+}
+
+.empty-notifications h2{
+
+    font-size:30px;
+
+}
+
+.empty-notifications p{
+
+    color:#666;
+
+}
+
+.empty-notifications button{
+
+    border:none;
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.empty-notifications button:hover{
+
+    background:#1D4ED8;
+
+}
+
+@media(max-width:768px){
+
+.empty-notifications{
+
+padding:50px 20px;
+
+}
+
+.empty-notifications h2{
+
+font-size:24px;
+
+}
+
+}
